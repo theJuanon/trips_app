@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'description_place.dart';
 import 'review.dart';
 import 'review_list.dart';
-import 'gradient_back.dart';
+import 'header_appbar.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
             DescriptionPlace("Sweden", 5, descriptionDummy),
             ReviewList(reviews)
           ]),
-          GradientBack("Popular")
+          HeaderAppbar()
         ],
       )),
     );
