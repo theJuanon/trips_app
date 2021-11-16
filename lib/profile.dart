@@ -83,7 +83,7 @@ class Profile extends StatelessWidget {
         ),
       ),
       Container(
-        margin: const EdgeInsets.only(top: 175.0),
+        margin: const EdgeInsets.only(top: 200.0),
         child: CardVerticalList(),
       ),
     ]);

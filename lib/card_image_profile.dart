@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trips_app/floating_action_button_green.dart';
+import 'package:trips_app/place_card.dart';
 
 class CardImageProfile extends StatelessWidget {
   final String pathImage;
@@ -9,9 +10,9 @@ class CardImageProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final card = Container(
-        height: 250.0,
+        height: 225.0,
         width: 350.0,
-        margin: EdgeInsets.only(top: 80.0, left: 20.0),
+        margin: EdgeInsets.only(top: 60.0),
         decoration: BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.cover, image: AssetImage(pathImage)),
@@ -26,8 +27,10 @@ class CardImageProfile extends StatelessWidget {
 
     return Stack(
       //alignment: Alignment(0.9, 1.1),
+      alignment: Alignment(0.05, 1.2),
       children: [
         card,
+        PlaceCard(),
         //FloatingActionButtonGreen()
       ],
     );
