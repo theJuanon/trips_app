@@ -13,7 +13,7 @@ class MainTrips extends StatefulWidget {
 class _MainTripsState extends State<MainTrips> {
   int indexTap = 0;
 
-  final List<Widget> widgetChildren = [HomeTrips(), SearchTrips(), Profile()];
+  final List<Widget> screens = [HomeTrips(), SearchTrips(), Profile()];
 
   void onTapped(int index) {
     setState(() {
@@ -24,7 +24,7 @@ class _MainTripsState extends State<MainTrips> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: widgetChildren[indexTap],
+      body: screens[indexTap],
       bottomNavigationBar: Theme(
           data: Theme.of(context)
               .copyWith(canvasColor: Colors.white, primaryColor: Colors.purple),

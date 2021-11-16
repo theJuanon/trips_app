@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trips_app/review.dart';
 import 'package:trips_app/review_list.dart';
 
+import 'card_image_list.dart';
 import 'description_place.dart';
 import 'header_appbar.dart';
 
@@ -28,7 +29,8 @@ class HomeTrips extends StatelessWidget {
           DescriptionPlace("Sweden", 5, descriptionDummy),
           ReviewList(reviews)
         ]),
-        HeaderAppbar()
+        HeaderAppbar("Bienvenido"),
+        CardImageList()
       ],
     );
   }
